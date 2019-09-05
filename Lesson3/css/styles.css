@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Global Styles
+-----------------------------*/
+body {
+	background: lightgray;
+	margin: 5%;
+	padding: 20px;
+	
+}
+img {
+	height: 30%;
+	width: 20%;
+	float: left;
+	padding: 10px;
+	
+
+}
+p {
+	padding: 5px;
+	text-indent: 5px;
+
+}
+section h2 {
+	color: white;
+	font-size: 20pt;
+}
+main section h3 {
+	text-decoration: underline;
+}
+
+
+
+/* Work Section
+-----------------------------*/
+.company-name {
+	font-style: italic;
+	font-size: 18px;
+	font-weight: bold;
+}
+#work {
+	background:rgba(227,180,189,0.7);
+	padding: 10px;
+	margin: 10px;
+	
+}
+
+
+
+/* Education Section
+-----------------------------*/
+#education {
+	background:rgba(202,225,239,0.8);
+	padding: 10px;
+	margin: 10px;
+}
+
+
+
+/* Header and Footer
+-----------------------------*/
+header p {
+	font-size: 14pt;
+	font-style: italic;
+	padding-left: 20px;
+}
+header h2 {
+	text-decoration: underline;
+}
+
+.header-my-name {
+	color: rgba(235,91,105,0.8);
+	color: rgba(235,91,105,0.8);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	text-align: left;
+		
+}footer h2 {
+	color: rgba(235,91,105,1.00);
+}
+footer, header {
+	background-color: #EBE6E6;
+	padding: 10px;
+	margin: 10px;
+}
+.copyright {
+	font-style: italic;
+}
+a:link {
+	background: #474646;
+	color: white;
+	padding: 5px;
+	box-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+a:active {
+	border: 1px solid yellowgreen;
+}
+
+a:hover, a:visited:hover {
+	color: greenyellow;
+}
+a:visited {
+	color: lightcoral;
+}
+a:focus {
+	outline: 1px solid coral;
+}
