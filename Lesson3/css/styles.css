@@ -1,5 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
+/* border box fix */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+
 
 /* Global Styles
 -----------------------------*/
@@ -8,9 +17,8 @@ body {
 	margin: 0;
 	
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-	font-size: 14pt;
-	line-height: 1.1;
-	
+	font-size: 120%;
+	line-height: 1.1;	
 }
 
 p {
@@ -20,7 +28,7 @@ p {
 }
 section h2 {
 	color: white;
-	font-size: 20pt;
+	font-size: 150%;
 	border-bottom: thin rgba(0,0,0,1.00);
 	padding-bottom: 10px;
 	border-bottom-style: solid;
@@ -38,7 +46,7 @@ section h2 {
 	padding:  50px;
 	overflow: hidden;
 }
-.column-narrow {
+/*.column-narrow {
 	width: 35%;
 	float: left;
 	paddign-right: 3%;
@@ -49,7 +57,10 @@ section h2 {
   float: left;
   min-height: 175px;
 }
-
+*/
+.job-description {
+	margin-top: 0;
+}
 
 
 /* Work Section
@@ -117,10 +128,9 @@ header h2 {
 0 0 10px #fff,
 0 0 15px white,
 0 0 40px white,
-0 0 60px white;
-
-		
-}footer h2 {
+0 0 60px white;		
+}
+footer h2 {
 	color: rgba(235,91,105,1.00);
 	text-align: center;
 }
@@ -145,7 +155,7 @@ a.footerLinks:link {
 	
 	color: cornflowerblue;
 	padding: 5px;
-	box-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+	
 }
 a.footerLinks:active {
 	border: 1px solid yellowgreen;
@@ -160,3 +170,115 @@ a.footerLinks:visited {
 a.footerLinks:focus {
 	outline: 1px solid coral;
 }
+
+/* NAVIGATION STYLES */
+
+#navbar {
+	width: 100%;
+
+	
+}
+#nav, #nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+}
+#nav li {
+	width: 20%;
+	float: left;
+	cursor: pointer;
+}
+#nav li ul li {
+	width: 100%;
+	
+}
+#nav a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	
+}
+
+#nav li ul {
+	position: absolute;
+	background-color: darkgray;
+	left: -999em;	
+	width: 15%;
+	padding: 0.5%;
+	
+	}
+#nav li ul li {
+	margin: 1%;
+
+}
+#nav li:hover, #nav li ul li:hover {
+	color: lightcoral;
+	
+}
+#nav li ul li a:hover {
+	color: black;
+}
+
+#nav li:hover ul {
+	left: auto;
+
+}
+#nav li ul li:hover {
+	background-color: lightcoral;
+}
+
+
+/*--------------- Media Queries
+--------------------------------*/
+
+@media (min-width: 900px) {
+	.column-narrow {
+	width: 35%;
+	float: left;
+		paddign-right: 3%;
+	
+}
+.column-wide {
+  width: 62%;
+  float: left;
+  padding-left: 3%;
+}
+}
+@media (max-width: 899px){
+	header {
+		text-align: center;
+	}
+	.header-img {
+		width: 200px;
+	}
+	.header-my-name {
+		text-align: center;
+	}	
+	#nav li {
+		text-align: center;
+	}
+}
+
+@media (max-width: 550px){
+	#nav li {
+		cursor: pointer;
+   display: block;
+    margin: 5%;
+		width: 100%;
+		text-align: center;
+	}
+	#nav li ul {
+	text-align: center;
+	left: auto;
+		visibility: hidden;
+
+}
+	#nav li ul:hover {
+	visibility: visible;
+	
+	}
+	
+}
+
+	
