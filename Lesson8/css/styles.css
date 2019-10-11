@@ -21,12 +21,13 @@ h3, h2 {
 }
 img {
 height: 300px;
+	widows: 400px;
 	
 }
 .more_images{
 	background-position: center;
 	height: 100%;
-	margin-top: -1%;
+	
 	padding: 0;
 	
 }
@@ -52,9 +53,12 @@ h2 {
 .col {
 	float: left;
 	text-align: center;
+	min-width: 199px;
+
 }
 .col-1 {
 	width: 20%;
+	
 }
 .col-2 {
 	width: 40%;
@@ -174,31 +178,10 @@ footer {
 --------------------------------*/
 
 @media (min-width: 900px) {
-	.column-narrow {
-	width: 35%;
-	float: left;
-		paddign-right: 3%;
 	
 }
-.column-wide {
-  width: 62%;
-  float: left;
-  padding-left: 3%;
-}
-}
 @media (max-width: 899px){
-	header {
-		text-align: center;
-	}
-	.header-img {
-		width: 200px;
-	}
-	.header-my-name {
-		text-align: center;
-	}	
-	#nav li {
-		text-align: center;
-	}
+	
 }
 
 @media (max-width: 550px){
