@@ -15,13 +15,14 @@ html {
 body {
 	text-align: center;
 	font-family: 'Poppins', sans-serif;
+	
 }
 h3, h2 {
 	text-transform: capitalize;
 }
 img {
 height: 300px;
-	widows: 400px;
+
 	
 }
 .more_images{
@@ -53,8 +54,8 @@ h2 {
 .col {
 	float: left;
 	text-align: center;
-	min-width: 199px;
-
+	min-width: 300px;
+	overflow: hidden;	
 }
 .col-1 {
 	width: 20%;
@@ -177,16 +178,28 @@ footer {
 /*--------------- Media Queries
 --------------------------------*/
 
-@media (min-width: 900px) {
+@media (max-width: 940px){
+	
+	main .container {
+		margin: 0;
+	}
 	
 }
-@media (max-width: 899px){
+@media (max-width: 700px){
+	
+	main .container {
+		margin:auto;
+	}
 	
 }
-
 @media (max-width: 550px){
+	main .container {
+		margin-left: auto;
+	}
 	
-	
+	.col:last-child {
+		margin: auto;
+	}
 	.col {
 		float:none;
 		width: 100%;
