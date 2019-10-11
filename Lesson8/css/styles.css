@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+/* border box fix 
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+*/
+
+
+/* Global Styles
+-----------------------------*/
+img {
+height: 300px;
+	
+}
+
+.container {
+	margin: 0 auto;
+	overflow: hidden;	
+}
+
+.col {
+	float: left;
+	text-align: center;
+}
+.col-1 {
+	width: 20%;
+}
+.col-2 {
+	width: 40%;
+}
+.col-3 {
+	width: 60%;
+}
+.col-4 {
+	width: 80%;
+}
+.col-5 {
+	width: 100%;
+}
+
+/*.column-narrow {
+	width: 35%;
+	float: left;
+	paddign-right: 3%;
+	min-height: 175px;
+}
+.column-wide {
+  width: 62%;
+  float: left;
+  min-height: 175px;
+}
+*/
+
+/*--------------- NAVIGATION BAR
+--------------------------------*/
+
+#navbar {
+	text-decoration: none;
+	width: 100;
+	padding-bottom: 4%;
+}
+#nav li, a {
+	list-style: none;
+	text-decoration: none;
+}
+ul#nav {
+	padding: 0;
+}
+
+/*--------------- Header
+--------------------------------*/
+header {
+	background-image: url("../images/office.jpg");
+	padding: 20%;
+	
+}
+.parent {
+	position: relative;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color:rgba(0, 0, 0, 0.6); 
+	
+}
+#header_title {
+	color: white;
+	text-align: center;
+}
+
+/*--------------- Media Queries
+--------------------------------*/
+
+@media (min-width: 900px) {
+	.column-narrow {
+	width: 35%;
+	float: left;
+		paddign-right: 3%;
+	
+}
+.column-wide {
+  width: 62%;
+  float: left;
+  padding-left: 3%;
+}
+}
+@media (max-width: 899px){
+	header {
+		text-align: center;
+	}
+	.header-img {
+		width: 200px;
+	}
+	.header-my-name {
+		text-align: center;
+	}	
+	#nav li {
+		text-align: center;
+	}
+}
+
+@media (max-width: 550px){
+	
+	
+	.col {
+		float:none;
+		width: 100%;
+	}
+	
+}
+
+	
