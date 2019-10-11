@@ -12,9 +12,32 @@ html {
 
 /* Global Styles
 -----------------------------*/
+body {
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+h3, h2 {
+	text-transform: capitalize;
+}
 img {
 height: 300px;
 	
+}
+.more_images{
+	background-position: center;
+	height: 100%;
+	margin-top: -1%;
+	padding: 0;
+	
+}
+section {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+h2 {
+	text-transform: uppercase;
+	color: darkgray;
 }
 
 .container {
@@ -42,6 +65,25 @@ height: 300px;
 	width: 100%;
 }
 
+.col-6-1 {
+	width: 16.66%;
+}
+.col-6-2 {
+	width: 33.33%;
+}
+.col-6-3 {
+	width: 50.00%;
+}
+.col-6-4 {
+	width: 66.66%;
+}
+.col-6-5 {
+	width: 82.66%;
+}
+.col-6-6 {
+	width: 100.00%;
+}
+
 /*.column-narrow {
 	width: 35%;
 	float: left;
@@ -55,6 +97,10 @@ height: 300px;
 }
 */
 
+#featured_work p {
+	padding: 10%;
+}
+
 /*--------------- NAVIGATION BAR
 --------------------------------*/
 
@@ -62,10 +108,13 @@ height: 300px;
 	text-decoration: none;
 	width: 100;
 	padding-bottom: 4%;
+	
 }
 #nav li, a {
 	list-style: none;
 	text-decoration: none;
+	color: gray;
+	text-transform: uppercase;
 }
 ul#nav {
 	padding: 0;
@@ -75,6 +124,8 @@ ul#nav {
 --------------------------------*/
 header {
 	background-image: url("../images/office.jpg");
+		background-attachment: fixed;
+	background-position: center;
 	padding: 20%;
 	
 }
@@ -93,8 +144,28 @@ header {
 #header_title {
 	color: white;
 	text-align: center;
+	text-transform: uppercase;
 }
 
+footer {
+	background-image: url(../images/logo_icon.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	padding: 10%;
+	font-size: 120%;
+}
+#h2_footer {
+	color: white;
+}
+
+.copyright {
+	color: white;
+}
+.footerLinks {
+	color: lightgrey;
+	text-transform: none;
+	
+}
 /*--------------- Media Queries
 --------------------------------*/
 
