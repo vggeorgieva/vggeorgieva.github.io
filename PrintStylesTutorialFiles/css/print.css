@@ -1,0 +1,64 @@
+@media print {
+	h1, p, a {
+		
+		color:#000 !important;}
+	
+	hl {
+		font-size: 30pt !important;
+	}
+	h2 {
+		font-size: 16pt !important;
+	}
+	p, li {
+		font-size: llpt !important;
+	}
+	body, html {
+		background-color: white !important;
+	}
+	p {
+		font-size: 12pt !important;
+	}
+	 a:after {
+		content: "("attr(href)")";
+		 color: #000 !important;
+		
+	}
+	
+	#banner, #mainWrapper, #footer, #main {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	#sidebar, #navWrapper, #footerNav {
+		display: none;
+	}
+	#footerMain  {
+		margin-top: 15pt;
+		border-top: 1pt solid #000;
+		padding-top: 5pt;
+	}
+	#footerMain p {
+		font-size: 9pt !important;
+	}
+	#banner {
+		height: auto;
+		text-align: center;
+		border-bottom: 2pt solid #000;
+		border-top: 2pt solid #000;
+		margin-bottom: 15pt;
+	}
+	#main {
+		float: none;
+	}
+	#footerMain {
+		margin: 0;
+	}
+	#footerWrapper {
+		margin-top: 20pt;
+		padding-top: 10pt;
+		float: none;
+	}
+	#mainWrapper, #footer {
+	overflow: visible;
+	}
+}
